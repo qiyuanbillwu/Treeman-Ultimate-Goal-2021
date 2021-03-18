@@ -29,23 +29,6 @@ public class OpMode_Manual extends LinearOpMode {
 
             robot.drive.drive(x, y, yaw);
 
-            double speed = 0.5 * (gamepad1.left_trigger + gamepad1.right_trigger);
-            robot.launch.launch(speed);
-
-            if (gamepad1.left_bumper) {
-                robot.intake.intake(1.0);
-            } else if (gamepad1.right_bumper) {
-                robot.intake.spit(1.0);
-            } else {
-                robot.intake.stop();
-            }
-
-            if (gamepad1.a){
-                robot.launch.push();
-            } else if (gamepad1.b){
-                robot.launch.retract();
-            }
-
             telemetry.update();
         }
 

@@ -6,7 +6,6 @@ public class LaunchSystem implements DeviceInterface {
 
     public DcMotorEx leftFlywheel = null;
     public DcMotorEx rightFlywheel = null;
-    Servo pusher = null;
 
     public void init(HardwareMap hardwareMap) {
 
@@ -19,7 +18,6 @@ public class LaunchSystem implements DeviceInterface {
         leftFlywheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
         rightFlywheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
 
-        pusher = hardwareMap.get(Servo.class, "pusher");
     }
 
     public void loop() {
@@ -29,14 +27,6 @@ public class LaunchSystem implements DeviceInterface {
     public void launch(double speed) {
         leftFlywheel.setVelocity(speed);
         rightFlywheel.setVelocity(speed);
-    }
-
-    public void push(){
-        pusher.setPosition(1.0);
-    }
-
-    public void retract(){
-        pusher.setPosition(0.0);
     }
 
     public void stop() {

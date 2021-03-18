@@ -10,7 +10,6 @@ public class Robot {
     public LaunchSystem launch;
     public ObjectDetector detector;
     public Navigation navigation;
-    public IntakeSystem intake;
 
     ArrayList<DeviceInterface> devices = new ArrayList<>();
 
@@ -20,17 +19,15 @@ public class Robot {
         launch = new LaunchSystem();
         detector = new ObjectDetector();
         navigation = new Navigation();
-        intake = new IntakeSystem();
 
     }
 
     public void init(HardwareMap hardwareMap) {
 
         drive.init(hardwareMap);
-        launch.init(hardwareMap);
-        detector.init(hardwareMap);
-        navigation.init(hardwareMap);
-        intake.init(hardwareMap);
+        //launch.init(hardwareMap);
+        //detector.init(hardwareMap);
+        //navigation.init(hardwareMap);
 
     }
 
