@@ -33,10 +33,10 @@ public class MecanumDrive {
 
     public void init(HardwareMap hardwareMap){
         this.hardwareMap = hardwareMap;
-        leftFrontDrive= hardwareMap.get(DcMotorEx.class,"lfd");
-        leftRearDrive= hardwareMap.get(DcMotorEx.class,"lrd");
-        rightFrontDrive= hardwareMap.get(DcMotorEx.class,"rfd");
-        rightRearDrive= hardwareMap.get(DcMotorEx.class,"rrd");
+        leftFrontDrive= hardwareMap.get(DcMotorEx.class,"lf");
+        leftRearDrive= hardwareMap.get(DcMotorEx.class,"lr");
+        rightFrontDrive= hardwareMap.get(DcMotorEx.class,"rf");
+        rightRearDrive= hardwareMap.get(DcMotorEx.class,"rr");
 
     }
 
