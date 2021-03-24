@@ -34,4 +34,11 @@ public class Robot {
 
     }
 
+    public void stop(){
+        drive.stop();
+        launch.stop();
+        intake.stop();
+
+    }
+
 }

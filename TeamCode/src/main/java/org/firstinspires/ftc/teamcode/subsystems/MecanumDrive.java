@@ -5,6 +5,9 @@ import com.qualcomm.robotcore.hardware.DcMotorEx;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.util.Range;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 
 /***
  *
@@ -24,6 +27,8 @@ public class MecanumDrive {
     private double leftRearPower=0.0;
     private double rightFrontPower=0.0;
     private double rightRearPower=0.0;
+
+    Timer timer = new Timer();
 
 
     public MecanumDrive() {
@@ -45,8 +50,19 @@ public class MecanumDrive {
 
     }
 
-//    public void initMotor("")
+    public void drive(double y, double x, double rotation, double timeInSecs) {
+        drive(y,x,rotation);
+        timer.schedule(new TaskStop(), (long) (timeInSecs*1000));
+    }
 
+//    public void initMotor("")
+    class TaskStop extends TimerTask {
+
+        @Override
+        public void run() {
+            stop();
+        }
+    }
 
     /***
      *
@@ -55,13 +71,7 @@ public class MecanumDrive {
      * @param rotation 左右旋转；大于0右转，小于0左转；
      */
     public void drive(double y, double x, double rotation) {
-//        if (Math.abs(x) < 0.3) {
-//            x = 0;
-//        }
-//        if (Math.abs(y) < 0.3) {
-//            y = 0;
-//        }
-//
+
         // 计算四个轮子的速度值
         leftFrontPower = y + x + rotation;
         leftRearPower = y - x + rotation;

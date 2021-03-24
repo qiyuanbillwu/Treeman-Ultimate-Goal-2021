@@ -2,11 +2,15 @@ package org.firstinspires.ftc.teamcode.subsystems;
 
 import com.qualcomm.robotcore.hardware.*;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class LaunchSystem implements DeviceInterface {
 
     public DcMotorEx leftFlywheel = null;
     public DcMotorEx rightFlywheel = null;
     Servo pusher = null;
+    Timer timer = new Timer();
 
     public void init(HardwareMap hardwareMap) {
 
@@ -34,10 +38,19 @@ public class LaunchSystem implements DeviceInterface {
 
     public void push(){
         pusher.setPosition(1.0);
+        timer.schedule(new TaskRetract(),500);
     }
 
     public void retract(){
         pusher.setPosition(0.0);
+    }
+
+    class TaskRetract extends TimerTask{
+
+        @Override
+        public void run() {
+            retract();
+        }
     }
 
     public void stop() {
