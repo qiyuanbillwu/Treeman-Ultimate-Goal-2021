@@ -20,6 +20,7 @@ public class LaunchSystem implements DeviceInterface {
         rightFlywheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
 
         pusher = hardwareMap.get(Servo.class, "pusher");
+        pusher.setPosition(0.0);
     }
 
     public void loop() {

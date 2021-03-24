@@ -38,6 +38,11 @@ public class MecanumDrive {
         rightFrontDrive= hardwareMap.get(DcMotorEx.class,"rf");
         rightRearDrive= hardwareMap.get(DcMotorEx.class,"rr");
 
+        leftFrontDrive.setDirection(DcMotorEx.Direction.REVERSE);
+        leftRearDrive.setDirection(DcMotorEx.Direction.REVERSE);
+        rightFrontDrive.setDirection(DcMotorEx.Direction.REVERSE);
+        rightRearDrive.setDirection(DcMotorEx.Direction.REVERSE);
+
     }
 
 //    public void initMotor("")
@@ -59,9 +64,9 @@ public class MecanumDrive {
 //
         // 计算四个轮子的速度值
         leftFrontPower = y + x + rotation;
-        leftRearPower = -y + -x + rotation;
-        rightFrontPower = -y + x + rotation;
-        rightRearPower = y - x + rotation;
+        leftRearPower = y - x + rotation;
+        rightFrontPower = y - x - rotation;
+        rightRearPower = y + x - rotation;
 
         // 速度数值归一化。  将他们按比例收缩到-1到1之间。
         double maxMagnitude = Math.abs(leftFrontPower);

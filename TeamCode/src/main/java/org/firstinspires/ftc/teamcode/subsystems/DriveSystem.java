@@ -12,10 +12,10 @@ public class DriveSystem implements DeviceInterface {
 
     public void init(HardwareMap hardwareMap) {
 
-        lfd = hardwareMap.get(DcMotor.class, "lfd");
-        rfd = hardwareMap.get(DcMotor.class, "rfd");
-        lrd = hardwareMap.get(DcMotor.class, "lrd");
-        rrd = hardwareMap.get(DcMotor.class, "rrd");
+        lfd = hardwareMap.get(DcMotor.class, "lf");
+        rfd = hardwareMap.get(DcMotor.class, "rf");
+        lrd = hardwareMap.get(DcMotor.class, "lr");
+        rrd = hardwareMap.get(DcMotor.class, "rr");
 
     }
 
