@@ -2,6 +2,7 @@ package org.firstinspires.ftc.teamcode.subsystems;
 
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorEx;
+import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.util.Range;
 
@@ -45,8 +46,8 @@ public class MecanumDrive {
 
         leftFrontDrive.setDirection(DcMotorEx.Direction.REVERSE);
         leftRearDrive.setDirection(DcMotorEx.Direction.REVERSE);
-        rightFrontDrive.setDirection(DcMotorEx.Direction.REVERSE);
-        rightRearDrive.setDirection(DcMotorEx.Direction.REVERSE);
+        rightFrontDrive.setDirection(DcMotorEx.Direction.FORWARD);
+        rightRearDrive.setDirection(DcMotorEx.Direction.FORWARD);
 
     }
 
@@ -70,7 +71,7 @@ public class MecanumDrive {
      * @param x 左右平移；大于0向右，小于0向左；
      * @param rotation 左右旋转；大于0右转，小于0左转；
      */
-    public void drive(double y, double x, double rotation) {
+    public void drive(double x, double y, double rotation) {
 
         // 计算四个轮子的速度值
         leftFrontPower = y + x + rotation;
@@ -225,8 +226,8 @@ public class MecanumDrive {
     public void loop(){
         rightFrontDrive.setPower(rightFrontPower);
         leftFrontDrive.setPower(leftFrontPower);
-        rightRearDrive.setPower(leftRearPower);
-        leftRearDrive.setPower(rightRearPower);
+        rightRearDrive.setPower(rightRearPower);
+        leftRearDrive.setPower(leftRearPower);
     }
 
     @Override

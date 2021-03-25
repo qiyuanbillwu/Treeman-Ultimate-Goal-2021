@@ -24,7 +24,7 @@ public class LaunchSystem implements DeviceInterface {
         rightFlywheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
 
         pusher = hardwareMap.get(Servo.class, "pusher");
-        pusher.setPosition(0.0);
+        pusher.setPosition(1.0);
     }
 
     public void loop() {
@@ -37,12 +37,12 @@ public class LaunchSystem implements DeviceInterface {
     }
 
     public void push(){
-        pusher.setPosition(1.0);
+        pusher.setPosition(0.0);
         timer.schedule(new TaskRetract(),500);
     }
 
     public void retract(){
-        pusher.setPosition(0.0);
+        pusher.setPosition(1.0);
     }
 
     class TaskRetract extends TimerTask{

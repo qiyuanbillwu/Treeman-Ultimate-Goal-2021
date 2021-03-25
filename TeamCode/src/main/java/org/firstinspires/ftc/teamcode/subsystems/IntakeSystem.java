@@ -54,7 +54,7 @@ public class IntakeSystem implements DeviceInterface {
     }
 
     public void spit(double speed) {
-        collector.setVelocity(speed);
+        collector.setVelocity(-speed);
     }
 
     public void stop() {
