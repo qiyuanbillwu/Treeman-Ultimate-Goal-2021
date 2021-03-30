@@ -11,6 +11,7 @@ public class Robot {
     public ObjectDetector detector;
     public Navigation navigation;
     public IntakeSystem intake;
+    public Arm arm;
 
     ArrayList<DeviceInterface> devices = new ArrayList<>();
 
@@ -21,6 +22,7 @@ public class Robot {
         detector = new ObjectDetector();
         navigation = new Navigation();
         intake = new IntakeSystem();
+        arm = new Arm();
 
     }
 
@@ -31,6 +33,7 @@ public class Robot {
         detector.init(hardwareMap);
         navigation.init(hardwareMap);
         intake.init(hardwareMap);
+        arm.init(hardwareMap);
 
     }
 
@@ -38,7 +41,7 @@ public class Robot {
         drive.stop();
         launch.stop();
         intake.stop();
-
+        arm.stop();
     }
 
 }

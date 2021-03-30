@@ -29,20 +29,38 @@ public class OpMode_Manual extends LinearOpMode {
 
             robot.drive.drive(x, y, yaw);
 
-            double speed = 1.1 * (gamepad1.left_trigger + gamepad1.right_trigger);
+            double armPower = 0.5 * -gamepad2.left_stick_y;
+            robot.arm.rotate(armPower);
+
+            if (gamepad2.dpad_left){
+                robot.arm.open();
+            } else if (gamepad2.dpad_right){
+                robot.arm.close();
+            }
+
+            double speed = 0.0;
+
+            if (gamepad2.left_bumper){
+                speed = 1.0;
+            } else if (gamepad2.right_bumper){
+                speed = 1.2;
+            }
+
             robot.launch.launch(speed * 360);
 
             if (gamepad1.left_bumper) {
-                robot.intake.intake(1.0 * 360);
+                robot.intake.intake(5.0 * 360);
             } else if (gamepad1.right_bumper) {
-                robot.intake.spit(1.0 * 360);
+                robot.intake.spit(5.0 * 360);
             } else {
                 robot.intake.stop();
             }
 
             if (gamepad1.a){
                 robot.launch.push();
-            } else if (gamepad1.b){
+            }
+
+            if (gamepad1.b){
                 robot.launch.retract();
             }
 
@@ -51,10 +69,6 @@ public class OpMode_Manual extends LinearOpMode {
             } else if (gamepad2.b){
                 robot.intake.kick();
             }
-
-            robot.drive.loop();
-            robot.launch.loop();
-            robot.intake.loop();
 
             //telemetry.addData("gamepad 1 left stick", "x(%.2f), y(%.2f)", gamepad1.left_stick_x, gamepad1.left_stick_y);
             //telemetry.addData("gamepad 1 right stick", "yaw(%.2f), y(%.2f)", gamepad1.right_stick_x, gamepad1.right_stick_y);

@@ -22,6 +22,8 @@ public class LaunchSystem implements DeviceInterface {
 
         leftFlywheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
         rightFlywheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
+        leftFlywheel.setVelocityPIDFCoefficients(6,1,0,0);
+        rightFlywheel.setVelocityPIDFCoefficients(6,1,0,0);
 
         pusher = hardwareMap.get(Servo.class, "pusher");
         pusher.setPosition(1.0);

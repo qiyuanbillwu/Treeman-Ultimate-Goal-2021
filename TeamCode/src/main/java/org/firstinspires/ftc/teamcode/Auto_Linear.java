@@ -66,7 +66,10 @@ public class Auto_Linear extends LinearOpMode {
         robot = new Robot();
         robot.init(hardwareMap);
 
-        robot.launch.launch(1*360);
+        waitForStart();
+        runtime.reset();
+
+        robot.launch.launch(1.2*360);
         //如果安装了摄像头，直接在此调用摄像头初始化程序
 
         //调整此参数以保证全素运行
@@ -84,12 +87,13 @@ public class Auto_Linear extends LinearOpMode {
 
 
         //向前直行3秒，2秒后自动伸出手臂
-        robot.drive.drive(1,0,0,3.0);
+        robot.drive.drive(-0.5,0,0,2.0);
         safeWait(2);
 
-
+        robot.intake.kick();
         safeWait(0.5);
-        robot.drive.drive(-1,0,0,1);
+
+        robot.drive.drive(0.5,0,0,1);
         safeWait(1);
 
         robot.stop();

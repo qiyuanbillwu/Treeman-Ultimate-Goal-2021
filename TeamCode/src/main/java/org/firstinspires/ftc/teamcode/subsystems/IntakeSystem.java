@@ -29,7 +29,7 @@ public class IntakeSystem implements DeviceInterface {
     }
 
     public void prepareKick(){
-        kicker.setPosition(0.1);
+        kicker.setPosition(0.2);
     }
 
     public void kick(){

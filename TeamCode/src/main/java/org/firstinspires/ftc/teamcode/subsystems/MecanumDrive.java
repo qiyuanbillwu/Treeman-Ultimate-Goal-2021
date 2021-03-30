@@ -52,7 +52,7 @@ public class MecanumDrive {
     }
 
     public void drive(double y, double x, double rotation, double timeInSecs) {
-        drive(y,x,rotation);
+        drive(x,y,rotation);
         timer.schedule(new TaskStop(), (long) (timeInSecs*1000));
     }
 
@@ -91,6 +91,11 @@ public class MecanumDrive {
             rightFrontPower = rightFrontPower/maxMagnitude;
             rightRearPower = rightRearPower/maxMagnitude;
         }
+
+        rightFrontDrive.setPower(rightFrontPower);
+        leftFrontDrive.setPower(leftFrontPower);
+        rightRearDrive.setPower(rightRearPower);
+        leftRearDrive.setPower(leftRearPower);
     }
 
     /***
