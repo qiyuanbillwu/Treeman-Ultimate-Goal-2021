@@ -41,12 +41,12 @@ public class OpMode_Manual extends LinearOpMode {
             double speed = 0.0;
 
             if (gamepad2.left_bumper){
-                speed = 360;
+                speed = 1.0;
             } else if (gamepad2.right_bumper){
-                speed = 450;
+                speed = 1.23;
             }
 
-            robot.launch.launch(speed);
+            robot.launch.launch(speed * 360);
 
             if (gamepad1.left_bumper) {
                 robot.intake.intake(5.0 * 360);
