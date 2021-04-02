@@ -1,5 +1,6 @@
 package org.firstinspires.ftc.teamcode.subsystems;
 
+import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorEx;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.HardwareMap;
@@ -18,7 +19,7 @@ public class Arm implements DeviceInterface {
 
     public void init(HardwareMap hardwareMap) {
         arm = hardwareMap.get(DcMotorEx.class, "arm");
-        arm.setZeroPowerBehavior();
+        arm.setZeroPowerBehavior(DcMotorEx.ZeroPowerBehavior.BRAKE);
         arm.setDirection(DcMotorEx.Direction.REVERSE);
         arm.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
 
