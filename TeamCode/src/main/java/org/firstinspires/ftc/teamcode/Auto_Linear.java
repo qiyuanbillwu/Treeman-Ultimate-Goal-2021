@@ -66,6 +66,9 @@ public class Auto_Linear extends LinearOpMode {
         robot = new Robot();
         robot.init(hardwareMap);
 
+        telemetry.addData("Case: ", robot.detector.stableResult);
+        telemetry.update();
+
         waitForStart();
         runtime.reset();
 
@@ -85,18 +88,34 @@ public class Auto_Linear extends LinearOpMode {
         safeWait(0.5);
         robot.launch.stop();
 
+        double forward = 0.0;
+        double backward = 0.0;
+        switch (robot.detector.stableResult){
+            case 1://中
+                forward = 2.5;
+                backward = 1;
+                break;
+            case 2://远
+                forward = 3;
+                backward = 1.5;
+                break;
+            default://近
+                forward = 2;
+                backward = 0.5;
+        }
+
+
 
         //向前直行3秒，2秒后自动伸出手臂
-        robot.drive.drive(-0.5,0,0,2.0);
-        safeWait(2);
+        robot.drive.drive(-0.8,0,0,forward);
+        safeWait(forward);
+        // 平移回到放置摇摇乐的位置
+        if(robot.detector.stableResult==0 ||robot.detector.stableResult==2 ){
+            robot.drive.drive(0,-1,0,1);
+            safeWait(1);
+        }
 
-        robot.intake.kick();
-        safeWait(0.5);
-
-        robot.drive.drive(0.5,0,0,1);
-        safeWait(1);
-
-        robot.stop();
+        robot.drive.stop();
     }
 
 

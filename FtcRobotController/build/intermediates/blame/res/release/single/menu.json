@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/menu/main_menu.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/2f8153b3e856ea30c39f6a6eae830e37/jetified-Inspection-6.0.1/res/menu/main_menu.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/menu/ftc_robot_controller.xml",
+        "source": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/src/main/res/menu/ftc_robot_controller.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/menu/menu_server.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/58843f2bf45585c29d39ba98e2aaaa61/jetified-Blocks-6.0.1/res/menu/menu_server.xml"
+    }
+]

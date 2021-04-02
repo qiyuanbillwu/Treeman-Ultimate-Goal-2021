@@ -5,7 +5,7 @@ import com.qualcomm.robotcore.hardware.*;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class LaunchSystem implements DeviceInterface {
+public class LaunchSystem extends DeviceInterface {
 
     public DcMotorEx leftFlywheel = null;
     public DcMotorEx rightFlywheel = null;

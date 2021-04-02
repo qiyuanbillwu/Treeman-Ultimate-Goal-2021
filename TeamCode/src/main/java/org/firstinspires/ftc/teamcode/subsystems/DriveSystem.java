@@ -3,7 +3,7 @@ package org.firstinspires.ftc.teamcode.subsystems;
 import com.qualcomm.robotcore.hardware.*;
 import com.qualcomm.robotcore.util.Range;
 
-public class DriveSystem implements DeviceInterface {
+public class DriveSystem extends DeviceInterface {
 
     public DcMotor lfd = null;
     public DcMotor rfd = null;

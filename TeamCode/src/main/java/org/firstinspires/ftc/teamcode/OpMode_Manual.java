@@ -23,8 +23,8 @@ public class OpMode_Manual extends LinearOpMode {
         runtime.reset();
         while (opModeIsActive()) {
 
-            double x   = 0.7 *   gamepad1.left_stick_x; //平移
-            double y   = 0.7 *  gamepad1.left_stick_y; //前进
+            double x   = 0.7 *  gamepad1.left_stick_x; //平移
+            double y   = 0.7 *  -gamepad1.left_stick_y; //前进
             double yaw = 0.7 *  gamepad1.right_stick_x; //转弯
 
             robot.drive.drive(x, y, yaw);

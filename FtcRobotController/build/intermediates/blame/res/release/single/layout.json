@@ -1,0 +1,370 @@
+[
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/i2c_device.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/i2c_device.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_popup_menu_item_layout.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/file_info.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/file_info.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/digital_devices.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/digital_devices.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_select_dialog_material.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_screen_content_include.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/activity_inspection.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/2f8153b3e856ea30c39f6a6eae830e37/jetified-Inspection-6.0.1/res/layout/activity_inspection.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/lynx_module_configure_address_spin_item.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/lynx_module_configure_address_spin_item.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/fragment_wifi_mute.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/1058085949fabe555e35460a575af4f0/jetified-RobotCore-6.0.1/res/layout/fragment_wifi_mute.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/activity_permissions_validator.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/1058085949fabe555e35460a575af4f0/jetified-RobotCore-6.0.1/res/layout/activity_permissions_validator.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/activity_ftc_configuration.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/activity_ftc_configuration.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/servo.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/servo.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/matrices.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/matrices.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/feedback.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/1058085949fabe555e35460a575af4f0/jetified-RobotCore-6.0.1/res/layout/feedback.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/backbar_layout.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/1058085949fabe555e35460a575af4f0/jetified-RobotCore-6.0.1/res/layout/backbar_layout.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_action_mode_close_item_material.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/analog_outputs.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/analog_outputs.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/color_list_preference_line_item.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/1058085949fabe555e35460a575af4f0/jetified-RobotCore-6.0.1/res/layout/color_list_preference_line_item.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/select_dialog_multichoice_material.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_screen_toolbar.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_action_menu_layout.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/device_interface_module.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/device_interface_module.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/select_dialog_item_material.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/template_info.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/template_info.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/gray_line.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/gray_line.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_action_mode_bar.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/select_dialog_singlechoice_material.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/activity_ftc_lynx_address_update.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/activity_ftc_lynx_address_update.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/port_attached_row.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/port_attached_row.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/activity_load.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/activity_load.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/activity_ftc_wifi_remembered_groups.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/activity_ftc_wifi_remembered_groups.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/lynx_module.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/lynx_module.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_screen_simple.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/analog_inputs.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/analog_inputs.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/c38fa0dd5969e29fc44b3b2a926f9e0e/core-1.3.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/activity_configure_from_template.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/activity_configure_from_template.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_tooltip.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_tooltip.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/motor_list.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/motor_list.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/banner_parent.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/banner_parent.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/activity_program_and_manage.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/activity_program_and_manage.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/activity_generic_settings.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/activity_generic_settings.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/analog_output_device.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/analog_output_device.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/webcam_device.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/webcam_device.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/lynx_usb_device.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/lynx_usb_device.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/info_button.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/info_button.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_activity_chooser_view.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/activity_config_wifi_direct.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/activity_config_wifi_direct.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/activity_ftc_lynx_fw_update.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/activity_ftc_lynx_fw_update.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/pwm_device.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/pwm_device.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/activity_swap_usb_devices.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/activity_swap_usb_devices.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/loading_indicator_overlay.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/1058085949fabe555e35460a575af4f0/jetified-RobotCore-6.0.1/res/layout/loading_indicator_overlay.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/simple_device.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/simple_device.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_action_bar_title_item.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/lynx_module_configure_address.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/lynx_module_configure_address.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/digital_device.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/digital_device.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_list_menu_item_icon.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/activity_ftc_controller.xml",
+        "source": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/src/main/res/layout/activity_ftc_controller.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/servo_controller_banner.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/servo_controller_banner.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/pwms.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/pwms.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_search_view.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/legacy.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/legacy.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_list_menu_item_layout.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/motor.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/motor.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/header.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/header.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_alert_dialog_material.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/matrix_devices.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/matrix_devices.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/activity_ftc_wifi_channel_selector.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/activity_ftc_wifi_channel_selector.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/digital_device_lynx.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/digital_device_lynx.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/notification_template_part_time.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/c38fa0dd5969e29fc44b3b2a926f9e0e/core-1.3.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/red_line.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/red_line.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/activity_view_logs.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/activity_view_logs.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_popup_menu_header_item_layout.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/i2cs.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/i2cs.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_alert_dialog_title_material.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_expanded_menu_layout.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_action_bar_up_container.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_cascading_menu_item_layout.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_cascading_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/motor_controller_banner.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/motor_controller_banner.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/servo_list.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/servo_list.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/item_list_parent.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/item_list_parent.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_dialog_title_material.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/custom_dialog.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/c38fa0dd5969e29fc44b3b2a926f9e0e/core-1.3.0/res/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/abc_list_menu_item_radio.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/b07c35e765e8193abd69cce104d7a719/appcompat-1.2.0/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/button_list.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/button_list.xml"
+    },
+    {
+        "merged": "/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/FtcRobotController/build/intermediates/res/merged/release/layout/analog_input_device.xml",
+        "source": "/Users/bill/.gradle/caches/transforms-2/files-2.1/17287e9b9baa996262f0c3e718b4d468/jetified-FtcCommon-6.0.1/res/layout/analog_input_device.xml"
+    }
+]

@@ -8,10 +8,10 @@ public class Robot {
 
     public MecanumDrive drive;
     public LaunchSystem launch;
-    public ObjectDetector detector;
     public Navigation navigation;
     public IntakeSystem intake;
     public Arm arm;
+    TensorFlowObjectDetection detector = null;
 
     ArrayList<DeviceInterface> devices = new ArrayList<>();
 
@@ -19,10 +19,10 @@ public class Robot {
 
         drive = new MecanumDrive();
         launch = new LaunchSystem();
-        detector = new ObjectDetector();
         navigation = new Navigation();
         intake = new IntakeSystem();
         arm = new Arm();
+        detector = new TensorFlowObjectDetection();
 
     }
 
@@ -30,10 +30,10 @@ public class Robot {
 
         drive.init(hardwareMap);
         launch.init(hardwareMap);
-        detector.init(hardwareMap);
         navigation.init(hardwareMap);
         intake.init(hardwareMap);
         arm.init(hardwareMap);
+        detector.init(hardwareMap);
 
     }
 
@@ -42,6 +42,8 @@ public class Robot {
         launch.stop();
         intake.stop();
         arm.stop();
+        detector.stop();
+        navigation.stop();
     }
 
 }
