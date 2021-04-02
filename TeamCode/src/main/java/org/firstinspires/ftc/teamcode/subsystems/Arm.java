@@ -18,6 +18,7 @@ public class Arm implements DeviceInterface {
 
     public void init(HardwareMap hardwareMap) {
         arm = hardwareMap.get(DcMotorEx.class, "arm");
+        arm.setZeroPowerBehavior();
         arm.setDirection(DcMotorEx.Direction.REVERSE);
         arm.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
 
