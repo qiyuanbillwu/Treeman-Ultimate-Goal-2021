@@ -45,8 +45,8 @@ public class MecanumDrive {
 
         leftFrontDrive.setDirection(DcMotorEx.Direction.REVERSE);
         leftRearDrive.setDirection(DcMotorEx.Direction.REVERSE);
-        rightFrontDrive.setDirection(DcMotorEx.Direction.REVERSE);
-        rightRearDrive.setDirection(DcMotorEx.Direction.REVERSE);
+        rightFrontDrive.setDirection(DcMotorEx.Direction.FORWARD);
+        rightRearDrive.setDirection(DcMotorEx.Direction.FORWARD);
 
     }
 
@@ -90,6 +90,12 @@ public class MecanumDrive {
             rightFrontPower = rightFrontPower/maxMagnitude;
             rightRearPower = rightRearPower/maxMagnitude;
         }
+
+        rightFrontDrive.setPower(rightFrontPower);
+        leftFrontDrive.setPower(leftFrontPower);
+        rightRearDrive.setPower(rightRearPower);
+        leftRearDrive.setPower(leftRearPower);
+
     }
 
     /***

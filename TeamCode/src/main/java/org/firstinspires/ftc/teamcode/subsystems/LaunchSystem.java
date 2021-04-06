@@ -27,7 +27,7 @@ public class LaunchSystem extends DeviceInterface {
         rightFlywheel.setVelocityPIDFCoefficients(6,1,0,0);
 
         pusher = hardwareMap.get(Servo.class, "pusher");
-        pusher.setPosition(0.0);
+        pusher.setPosition(1.0);
     }
 
     public void loop() {
@@ -40,12 +40,12 @@ public class LaunchSystem extends DeviceInterface {
     }
 
     public void push(){
-        pusher.setPosition(1.0);
+        pusher.setPosition(0.0);
         timer.schedule(new TaskRetract(),500);
     }
 
     public void retract(){
-        pusher.setPosition(0.0);
+        pusher.setPosition(1.0);
     }
 
     class TaskRetract extends TimerTask{

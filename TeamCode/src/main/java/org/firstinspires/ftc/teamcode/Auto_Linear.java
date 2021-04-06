@@ -66,11 +66,23 @@ public class Auto_Linear extends LinearOpMode {
         robot = new Robot();
         robot.init(hardwareMap);
 
+        waitForStart();
+        runtime.reset();
+
+        robot.drive.drive(0.6,0,0, 0.5);
+        safeWait(0.5);
+
         robot.launch.launch(1*360);
+
         //如果安装了摄像头，直接在此调用摄像头初始化程序
+        robot.detector.start();
 
         //调整此参数以保证全素运行
         safeWait(3);
+
+        telemetry.addData("case: ", robot.detector.stableResult);
+        telemetry.update();
+
         //控制伺服将环推到飞轮上
         robot.launch.push();
 //        robot.inTake.in(5*360,5);
@@ -86,7 +98,7 @@ public class Auto_Linear extends LinearOpMode {
         double backward = 0.0;
         switch (robot.detector.stableResult){
             case 1://中
-                forward = 3.5;
+                forward = 3;
                 backward = 1;
                 break;
             case 2://远
@@ -94,7 +106,7 @@ public class Auto_Linear extends LinearOpMode {
                 backward = 1.5;
                 break;
             default://近
-                forward = 3;
+                forward = 2;
                 backward = 0.5;
         }
 
@@ -106,6 +118,7 @@ public class Auto_Linear extends LinearOpMode {
             robot.drive.drive(0,1,0,1);
             safeWait(1);
         }
+
 
         robot.stop();
     }

@@ -23,13 +23,13 @@ public class OpMode_Manual extends LinearOpMode {
         runtime.reset();
         while (opModeIsActive()) {
 
-            double x   = 0.7 *  gamepad1.left_stick_x; //平移
-            double y   = 0.7 *  -gamepad1.left_stick_y; //前进
-            double yaw = 0.7 *  gamepad1.right_stick_x; //转弯
+            double y   = 1 *  -gamepad1.left_stick_y; //前进
+            double x   = 0.9 *  gamepad1.left_stick_x; //平移
+            double yaw = 0.9 *  gamepad1.right_stick_x; //转弯
 
-            robot.drive.drive(x, y, yaw);
+            robot.drive.drive(y, x, yaw); //
 
-            double armPower = 0.5 * -gamepad2.left_stick_y;
+            double armPower = 0.5 * -gamepad2.right_stick_y;
             robot.arm.rotate(armPower);
 
             if (gamepad2.dpad_left){
@@ -41,9 +41,13 @@ public class OpMode_Manual extends LinearOpMode {
             double speed = 0.0;
 
             if (gamepad2.left_bumper){
-                speed = 1.0;
+                speed = 1.05;
             } else if (gamepad2.right_bumper){
-                speed = 1.23;
+                speed = 1.15;
+            } else if (gamepad2.left_trigger > 0){
+                speed = 3;
+            } else if (gamepad2.right_trigger > 0){
+                speed = 4;
             }
 
             robot.launch.launch(speed * 360);
@@ -64,18 +68,27 @@ public class OpMode_Manual extends LinearOpMode {
                 robot.launch.retract();
             }
 
+            /*
             if (gamepad2.a){
                 robot.intake.prepareKick();
             } else if (gamepad2.b){
                 robot.intake.kick();
             }
 
+             */
+
+            if (gamepad2.b){
+                robot.intake.kick();
+            }
+
             //telemetry.addData("gamepad 1 left stick", "x(%.2f), y(%.2f)", gamepad1.left_stick_x, gamepad1.left_stick_y);
             //telemetry.addData("gamepad 1 right stick", "yaw(%.2f), y(%.2f)", gamepad1.right_stick_x, gamepad1.right_stick_y);
             //telemetry.addData("power", "lf(%.2f), lr(%.2f), rf(%.2f), rr(%.2f)", robot.drive.leftFrontDrive.getVelocity(), robot.drive.leftRearDrive.getVelocity(), robot.drive.rightFrontDrive.getVelocity(), robot.drive.rightRearDrive.getVelocity());
-            telemetry.addData("left bumper", gamepad1.left_bumper);
-            telemetry.addData("left trigger", gamepad1.left_trigger);
-            telemetry.update();
+            //telemetry.addData("left bumper", gamepad1.left_bumper);
+            //telemetry.addData("left trigger", gamepad1.left_trigger);
+            telemetry.addData("left flywheel velocity: ", robot.launch.leftFlywheel.getVelocity());
+            telemetry.addData("right flywheel velocity: ", robot.launch.rightFlywheel.getVelocity());
+             telemetry.update();
         }
 
     }

@@ -21,7 +21,7 @@ public class IntakeSystem extends DeviceInterface {
         collector.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
 
         kicker = hardwareMap.get(Servo.class, "kicker");
-        kicker.setPosition(0.0);
+        kicker.setPosition(0.2);
     }
 
     public void loop() {
@@ -29,7 +29,7 @@ public class IntakeSystem extends DeviceInterface {
     }
 
     public void prepareKick(){
-        kicker.setPosition(0.1);
+        kicker.setPosition(0.2);
     }
 
     public void kick(){
@@ -54,7 +54,7 @@ public class IntakeSystem extends DeviceInterface {
     }
 
     public void spit(double speed) {
-        collector.setVelocity(speed);
+        collector.setVelocity(-speed);
     }
 
     public void stop() {
