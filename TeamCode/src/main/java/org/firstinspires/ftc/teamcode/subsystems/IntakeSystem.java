@@ -7,7 +7,7 @@ import com.qualcomm.robotcore.hardware.Servo;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class IntakeSystem implements DeviceInterface {
+public class IntakeSystem extends DeviceInterface {
 
     public DcMotorEx collector = null;
     Servo kicker = null;

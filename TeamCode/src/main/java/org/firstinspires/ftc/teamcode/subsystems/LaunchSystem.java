@@ -5,7 +5,7 @@ import com.qualcomm.robotcore.hardware.*;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class LaunchSystem implements DeviceInterface {
+public class LaunchSystem extends DeviceInterface {
 
     public DcMotorEx leftFlywheel = null;
     public DcMotorEx rightFlywheel = null;
@@ -22,6 +22,9 @@ public class LaunchSystem implements DeviceInterface {
 
         leftFlywheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
         rightFlywheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
+
+        leftFlywheel.setVelocityPIDFCoefficients(6,1,0,0);
+        rightFlywheel.setVelocityPIDFCoefficients(6,1,0,0);
 
         pusher = hardwareMap.get(Servo.class, "pusher");
         pusher.setPosition(0.0);
