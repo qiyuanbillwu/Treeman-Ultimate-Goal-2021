@@ -17,7 +17,7 @@ import static org.firstinspires.ftc.robotcore.external.navigation.AxesOrder.YZX;
 import static org.firstinspires.ftc.robotcore.external.navigation.AxesReference.EXTRINSIC;
 import static org.firstinspires.ftc.robotcore.external.navigation.VuforiaLocalizer.CameraDirection.BACK;
 
-public class Navigation extends DeviceInterface {
+public class Navigation implements DeviceInterface {
 
     WebcamName webcamName = null;
     HardwareMap hardwareMap = null;

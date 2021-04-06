@@ -5,7 +5,7 @@ import com.qualcomm.robotcore.hardware.*;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class LaunchSystem extends DeviceInterface {
+public class LaunchSystem implements DeviceInterface {
 
     public DcMotorEx leftFlywheel = null;
     public DcMotorEx rightFlywheel = null;
@@ -22,11 +22,9 @@ public class LaunchSystem extends DeviceInterface {
 
         leftFlywheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
         rightFlywheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
-        leftFlywheel.setVelocityPIDFCoefficients(6,1,0,0);
-        rightFlywheel.setVelocityPIDFCoefficients(6,1,0,0);
 
         pusher = hardwareMap.get(Servo.class, "pusher");
-        pusher.setPosition(1.0);
+        pusher.setPosition(0.0);
     }
 
     public void loop() {
@@ -39,12 +37,12 @@ public class LaunchSystem extends DeviceInterface {
     }
 
     public void push(){
-        pusher.setPosition(0.0);
+        pusher.setPosition(1.0);
         timer.schedule(new TaskRetract(),500);
     }
 
     public void retract(){
-        pusher.setPosition(1.0);
+        pusher.setPosition(0.0);
     }
 
     class TaskRetract extends TimerTask{

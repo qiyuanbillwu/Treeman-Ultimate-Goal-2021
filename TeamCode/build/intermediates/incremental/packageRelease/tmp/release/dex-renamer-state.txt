@@ -1,4 +1,0 @@
-#Fri Apr 02 11:54:11 CST 2021
-base.0=/Users/bill/Desktop/Treeman-Ultimate-Goal-2021/TeamCode/build/intermediates/dex/release/mergeDexRelease/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
