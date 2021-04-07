@@ -83,7 +83,7 @@ public class Auto_Linear extends LinearOpMode {
         telemetry.addData("case: ", robot.detector.stableResult);
         telemetry.update();
 
-        robot.drive.drive(0.9,0,0,1.4);
+        robot.drive.drive(0.9,0,0,1.3);
         safeWait(0.8);
         robot.stop();
 
@@ -103,14 +103,14 @@ public class Auto_Linear extends LinearOpMode {
         robot.launch.stop();
 
         if (robot.detector.stableResult ==0){
-            robot.drive.drive(0,0,1,0.5);
+            robot.drive.drive(0,0,0.8,1);
+            safeWait(1);
+            robot.drive.drive(1,0,0,0.5);
             safeWait(0.5);
-            robot.drive.drive(1,0,0,0.3);
-            safeWait(0.3);
 
-            robot.arm.rotate(0.5);
-            safeWait(1.5);
-            robot.arm.stop();
+//            robot.arm.rotate(0.5);
+//            safeWait(1.5);
+//            robot.arm.stop();
 
             robot.arm.open();
         }
@@ -119,9 +119,9 @@ public class Auto_Linear extends LinearOpMode {
             robot.drive.drive(1,0,0,0.5);
             safeWait(0.5);
 
-            robot.arm.rotate(0.5);
-            safeWait(1.5);
-            robot.arm.stop();
+//            robot.arm.rotate(0.5);
+//            safeWait(1.5);
+//            robot.arm.stop();
 
             robot.arm.open();
         }
