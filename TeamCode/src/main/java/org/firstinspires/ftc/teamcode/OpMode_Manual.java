@@ -29,7 +29,7 @@ public class OpMode_Manual extends LinearOpMode {
 
             robot.drive.drive(y, x, yaw); //
 
-            double armPower = 0.5 * -gamepad2.right_stick_y;
+            double armPower = 0.8 * -gamepad2.right_stick_y;
             robot.arm.rotate(armPower);
 
             if (gamepad2.dpad_left){
