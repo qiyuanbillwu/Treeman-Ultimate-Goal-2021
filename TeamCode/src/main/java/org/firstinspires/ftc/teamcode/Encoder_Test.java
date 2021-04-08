@@ -66,7 +66,7 @@ public class Encoder_Test extends LinearOpMode {
         waitForStart();
         runtime.reset();
 
-        robot.drive.encoderDrive(0.6,24,24,5);
+        robot.drive.encoderDrive(0.6,0.5,0.5,2);
 
         robot.stop();
     }

@@ -77,7 +77,7 @@ public class MecanumDrive {
     }
 
     public void encoderDrive(double speed,
-                             double leftInches, double rightInches,
+                             double leftTiles, double rightTiles,
                              double timeoutS) {
         int lfTarget;
         int lrTarget;
@@ -85,10 +85,10 @@ public class MecanumDrive {
         int rrTarget;
 
         // Determine new target position, and pass to motor controller
-        lfTarget = leftFrontDrive.getCurrentPosition() + (int)(leftInches * COUNTS_PER_INCH);
-        lrTarget = leftRearDrive.getCurrentPosition() + (int)(rightInches * COUNTS_PER_INCH);
-        rfTarget = rightFrontDrive.getCurrentPosition() + (int)(rightInches * COUNTS_PER_INCH);
-        rrTarget = rightRearDrive.getCurrentPosition() + (int)(rightInches * COUNTS_PER_INCH);
+        lfTarget = leftFrontDrive.getCurrentPosition() + (int)(leftTiles * 24 * COUNTS_PER_INCH);
+        lrTarget = leftRearDrive.getCurrentPosition() + (int)(rightTiles * 24 * COUNTS_PER_INCH);
+        rfTarget = rightFrontDrive.getCurrentPosition() + (int)(rightTiles * 24 * COUNTS_PER_INCH);
+        rrTarget = rightRearDrive.getCurrentPosition() + (int)(rightTiles * 24 * COUNTS_PER_INCH);
         leftFrontDrive.setTargetPosition(lfTarget);
         leftRearDrive.setTargetPosition(lrTarget);
         rightFrontDrive.setTargetPosition(rfTarget);

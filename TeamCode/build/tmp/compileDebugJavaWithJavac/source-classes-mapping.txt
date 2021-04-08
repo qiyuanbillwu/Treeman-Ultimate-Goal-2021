@@ -1,5 +1,7 @@
 org/firstinspires/ftc/teamcode/ConceptTensorFlowObjectDetectionWebcam.java
  org.firstinspires.ftc.teamcode.ConceptTensorFlowObjectDetectionWebcam
+org/firstinspires/ftc/teamcode/Camera_Test_Blue_encoder.java
+ org.firstinspires.ftc.teamcode.Camera_Test_Blue_encoder
 org/firstinspires/ftc/teamcode/subsystems/TensorFlowObjectDetection.java
  org.firstinspires.ftc.teamcode.subsystems.TensorFlowObjectDetection
  org.firstinspires.ftc.teamcode.subsystems.TensorFlowObjectDetection$TaskScheduleDetect
@@ -8,8 +10,6 @@ org/firstinspires/ftc/teamcode/subsystems/IntakeSystem.java
  org.firstinspires.ftc.teamcode.subsystems.IntakeSystem$TaskStop
 org/firstinspires/ftc/teamcode/subsystems/Navigation.java
  org.firstinspires.ftc.teamcode.subsystems.Navigation
-org/firstinspires/ftc/teamcode/Camera_Test_Blue.java
- org.firstinspires.ftc.teamcode.Camera_Test_Blue
 org/firstinspires/ftc/teamcode/subsystems/LaunchSystem.java
  org.firstinspires.ftc.teamcode.subsystems.LaunchSystem
  org.firstinspires.ftc.teamcode.subsystems.LaunchSystem$TaskRetract
@@ -22,6 +22,8 @@ org/firstinspires/ftc/teamcode/subsystems/MecanumDrive.java
  org.firstinspires.ftc.teamcode.subsystems.MecanumDrive$TaskStop
 org/firstinspires/ftc/teamcode/Encoder_Test.java
  org.firstinspires.ftc.teamcode.Encoder_Test
+org/firstinspires/ftc/teamcode/Camera_Test_Red_encoder.java
+ org.firstinspires.ftc.teamcode.Camera_Test_Red_encoder
 org/firstinspires/ftc/teamcode/subsystems/ObjectDetector.java
  org.firstinspires.ftc.teamcode.subsystems.ObjectDetector
 org/firstinspires/ftc/teamcode/Auto_Blue.java

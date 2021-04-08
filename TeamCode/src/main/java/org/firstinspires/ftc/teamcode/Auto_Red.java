@@ -65,10 +65,15 @@ public class Auto_Red extends LinearOpMode {
         waitForStart();
         runtime.reset();
 
-        robot.drive.drive(0.5,0,0, 0.6);
-        safeWait(0.5);
+        robot.drive.encoderDrive(0.6,0.7,0.7,3);
 
-        robot.intake.kick();
+        robot.drive.drive(0,0.5,0,0.6);
+        safeWait(0.6);
+
+//        robot.drive.drive(0,0,-0.2,0.2);
+//        safeWait(0.2);
+
+        robot.drive.encoderDrive(0.5,-0.04,0.04,2);
 
         //如果安装了摄像头，直接在此调用摄像头初始化程序
         robot.detector.start();
@@ -81,11 +86,10 @@ public class Auto_Red extends LinearOpMode {
         telemetry.addData("case: ", robot.detector.stableResult);
         telemetry.update();
 
-        robot.drive.drive(0.9,0,0,1.3);
-        safeWait(0.8);
+        robot.drive.encoderDrive(0.8,2, 2, 4);
         robot.stop();
 
-        robot.launch.launch(2*360);
+        robot.launch.launch(1.8*360);
 
         safeWait(3);
 
@@ -101,27 +105,48 @@ public class Auto_Red extends LinearOpMode {
         robot.launch.stop();
 
         if (robot.detector.stableResult ==0){
-            robot.drive.drive(0,0,0.8,1);
-            safeWait(1);
-            robot.drive.drive(1,0,0,0.5);
+            robot.drive.drive(0,0,0.8,0.5);
             safeWait(0.5);
 
-//            robot.arm.rotate(0.5);
-//            safeWait(1.5);
-//            robot.arm.stop();
+            robot.drive.drive(0.5,0,0,0.5);
+            safeWait(0.5);
 
-            robot.arm.open();
+            releaseGoal();
+
+            robot.intake.kick();
         }
 
         if (robot.detector.stableResult == 1){
-            robot.drive.drive(1,0,0,0.5);
+
+            robot.drive.drive(0.5,0,0,0.9);
+            safeWait(0.9);
+
+            releaseGoal();
+
+            robot.intake.kick();
+        }
+
+        if (robot.detector.stableResult == 2){
+            robot.drive.drive(1,0,0,1);
+            safeWait(1);
+
+            robot.drive.drive(-0.5,0,0,0.5);
             safeWait(0.5);
 
-//            robot.arm.rotate(0.5);
-//            safeWait(1.5);
-//            robot.arm.stop();
+            robot.drive.drive(0,0,0.6, 0.5);
+            safeWait(0.5);
 
-            robot.arm.open();
+            robot.drive.drive(0.5,0,0,0.8);
+            safeWait(0.8);
+
+            releaseGoal();
+
+            robot.drive.drive(0,0,-0.5,0.5);
+            safeWait(0.5);
+
+            robot.drive.encoderDrive(0.8,-2,-2,5);
+
+            robot.intake.kick();
         }
 
         /*
@@ -153,8 +178,19 @@ public class Auto_Red extends LinearOpMode {
 
          */
 
-
         robot.stop();
+    }
+
+    public void releaseGoal(){
+        robot.arm.rotate(0.6);
+        safeWait(0.6);
+        robot.arm.stop();
+
+        safeWait(1);
+
+        robot.arm.open();
+
+        safeWait(2);
     }
 
 
