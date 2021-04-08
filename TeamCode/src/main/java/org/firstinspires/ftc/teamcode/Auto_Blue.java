@@ -69,10 +69,14 @@ public class Auto_Blue extends LinearOpMode {
         waitForStart();
         runtime.reset();
 
-        robot.drive.drive(0.5,0,0, 0.6);
-        safeWait(0.6);
+        robot.drive.drive(0.5,0,0, 1);
+        safeWait(1);
 
-        robot.drive.drive(0,-0.8,0,0.3);
+        robot.drive.drive(0,-0.5,0,0.6);
+        safeWait(0.7);
+
+        //右转调整角度
+        robot.drive.drive(0,0,0.2,0.3);
         safeWait(0.3);
 
         //robot.intake.kick();
@@ -88,15 +92,11 @@ public class Auto_Blue extends LinearOpMode {
         telemetry.addData("case: ", robot.detector.stableResult);
         telemetry.update();
 
-        //调整一下角度
-        robot.drive.drive(0,0,0.1,0.1);
-        safeWait(0.1);
-
-        robot.drive.drive(0.8,0,0,0.6);
-        safeWait(0.6);
+        robot.drive.drive(0.8,0,0,0.7);
+        safeWait(0.7);
         robot.stop();
 
-        robot.launch.launch(1.5*360);
+        robot.launch.launch(2*360);
 
         safeWait(3);
 
@@ -129,23 +129,29 @@ public class Auto_Blue extends LinearOpMode {
 
         if (robot.detector.stableResult == 1){
 
-            robot.drive.drive(0.5,0,0,0.7);
-            safeWait(0.7);
+            robot.drive.drive(0.5,0,0,0.9);
+            safeWait(0.9);
 
             releaseGoal();
 
-            robot.drive.drive(-0.5,0,0,0.5);
-            safeWait(0.5);
+            robot.drive.drive(-0.5,0,0,0.6);
+            safeWait(0.6);
         }
 
         if (robot.detector.stableResult == 2){
-            robot.drive.drive(1,0,0,0.8);
-            safeWait(0.8);
+            robot.drive.drive(1,0,0,0.7);
+            safeWait(0.7);
 
-            robot.drive.drive(0,0,-0.8, 0.5);
+            robot.drive.drive(0,0,-0.6, 0.3);
+            safeWait(0.3);
+
+            robot.drive.drive(0.5,0,0,0.5);
             safeWait(0.5);
 
             releaseGoal();
+
+            robot.drive.drive(-0.8,0,0,0.8);
+            safeWait(0.8);
         }
 
         /*
@@ -188,7 +194,7 @@ public class Auto_Blue extends LinearOpMode {
 
         robot.arm.open();
 
-        safeWait(1);
+        safeWait(2);
     }
 
 

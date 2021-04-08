@@ -20,6 +20,8 @@ org/firstinspires/ftc/teamcode/Auto_Red.java
 org/firstinspires/ftc/teamcode/subsystems/MecanumDrive.java
  org.firstinspires.ftc.teamcode.subsystems.MecanumDrive
  org.firstinspires.ftc.teamcode.subsystems.MecanumDrive$TaskStop
+org/firstinspires/ftc/teamcode/Encoder_Test.java
+ org.firstinspires.ftc.teamcode.Encoder_Test
 org/firstinspires/ftc/teamcode/subsystems/ObjectDetector.java
  org.firstinspires.ftc.teamcode.subsystems.ObjectDetector
 org/firstinspires/ftc/teamcode/Auto_Blue.java

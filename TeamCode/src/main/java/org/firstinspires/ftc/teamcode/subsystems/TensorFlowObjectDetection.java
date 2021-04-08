@@ -76,8 +76,8 @@ public class TensorFlowObjectDetection extends DeviceInterface {
     int[] labelCount = new int[]{0,0,0};
 
     public int stableResult = 0;
-    String currLabel = "";
-    String dbgMsg = "";
+    public String currLabel = "";
+    public String dbgMsg = "";
 
     private static final String VUFORIA_KEY =
             "AT59qW//////AAABmaLSQ01XOkhzlv+8L5c2m+sDnhON44SNNOxJknTR36zZZ96pBKYDPaSj7I2K/DrewwzqNvsDtrOFUfpQrYaAUWkSDEbIwVd7jIyW9ro0m9PXMR3LJr85vNIAtpSJ2PyfTZpIne6XiNlr25B/asndCAb+W14uTREwsHwRoU9mdszsCWUNFef10DpYMOlicl2+qIjrXePG1NUOfvHXcsi5yU9pb23h3Dh/Ly5jxMDxykd1j0RlWz/vqhOE9crcBR2EUP+hf7Bew9Zvh+Y0vlg0YizRcKx9ytqcfIQq4WZWKF7vkUHc78JHTozyacgcyzd+9IzSzaui8cpjiDn2h7+xtEeioC/sNGkE5wTqEJ79gGoV";

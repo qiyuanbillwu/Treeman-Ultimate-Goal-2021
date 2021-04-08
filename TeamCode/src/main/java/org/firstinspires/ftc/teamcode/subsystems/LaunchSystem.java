@@ -41,7 +41,7 @@ public class LaunchSystem extends DeviceInterface {
 
     public void push(){
         pusher.setPosition(0.0);
-        timer.schedule(new TaskRetract(),500);
+        timer.schedule(new TaskRetract(),300);
     }
 
     public void retract(){

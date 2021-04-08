@@ -3,7 +3,10 @@ package org.firstinspires.ftc.teamcode.subsystems;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorEx;
 import com.qualcomm.robotcore.hardware.HardwareMap;
+import com.qualcomm.robotcore.util.ElapsedTime;
 import com.qualcomm.robotcore.util.Range;
+
+import org.firstinspires.ftc.robotcontroller.external.samples.HardwarePushbot;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -30,6 +33,17 @@ public class MecanumDrive {
 
     Timer timer = new Timer();
 
+    /* Declare OpMode members. */
+    private ElapsedTime runtime = new ElapsedTime();
+
+    static final double     COUNTS_PER_MOTOR_REV    = 560 ;    // eg: TETRIX Motor Encoder
+    static final double     DRIVE_GEAR_REDUCTION    = 1.0 ;     // This is < 1.0 if geared UP
+    static final double     WHEEL_DIAMETER_INCHES   = 100 / 25.4 ;     // For figuring circumference
+    static final double     COUNTS_PER_INCH         = (COUNTS_PER_MOTOR_REV * DRIVE_GEAR_REDUCTION) /
+            (WHEEL_DIAMETER_INCHES * 3.1415);
+    static final double     DRIVE_SPEED             = 0.6;
+    static final double     TURN_SPEED              = 0.5;
+
 
     public MecanumDrive() {
 
@@ -48,6 +62,75 @@ public class MecanumDrive {
         rightFrontDrive.setDirection(DcMotorEx.Direction.FORWARD);
         rightRearDrive.setDirection(DcMotorEx.Direction.FORWARD);
 
+    }
+
+    public void initEncoder(){
+        leftFrontDrive.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        leftRearDrive.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        rightFrontDrive.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        rightRearDrive.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+
+        leftFrontDrive.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        leftRearDrive.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        rightFrontDrive.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        rightRearDrive.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+    }
+
+    public void encoderDrive(double speed,
+                             double leftInches, double rightInches,
+                             double timeoutS) {
+        int lfTarget;
+        int lrTarget;
+        int rfTarget;
+        int rrTarget;
+
+        // Determine new target position, and pass to motor controller
+        lfTarget = leftFrontDrive.getCurrentPosition() + (int)(leftInches * COUNTS_PER_INCH);
+        lrTarget = leftRearDrive.getCurrentPosition() + (int)(rightInches * COUNTS_PER_INCH);
+        rfTarget = rightFrontDrive.getCurrentPosition() + (int)(rightInches * COUNTS_PER_INCH);
+        rrTarget = rightRearDrive.getCurrentPosition() + (int)(rightInches * COUNTS_PER_INCH);
+        leftFrontDrive.setTargetPosition(lfTarget);
+        leftRearDrive.setTargetPosition(lrTarget);
+        rightFrontDrive.setTargetPosition(rfTarget);
+        rightRearDrive.setTargetPosition(rrTarget);
+
+        // Turn On RUN_TO_POSITION
+        leftFrontDrive.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        leftRearDrive.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        rightFrontDrive.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        rightRearDrive.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+
+        // reset the timeout time and start motion.
+        runtime.reset();
+        leftFrontDrive.setPower(Math.abs(speed));
+        leftRearDrive.setPower(Math.abs(speed));
+        rightFrontDrive.setPower(Math.abs(speed));
+        rightRearDrive.setPower(Math.abs(speed));
+
+        // keep looping while we are still active, and there is time left, and both motors are running.
+        // Note: We use (isBusy() && isBusy()) in the loop test, which means that when EITHER motor hits
+        // its target position, the motion will stop.  This is "safer" in the event that the robot will
+        // always end the motion as soon as possible.
+        // However, if you require that BOTH motors have finished their moves before the robot continues
+        // onto the next step, use (isBusy() || isBusy()) in the loop test.
+        while ((runtime.seconds() < timeoutS) &&
+                (leftFrontDrive.isBusy() && leftRearDrive.isBusy() && rightFrontDrive.isBusy() && rightRearDrive.isBusy())) {
+
+        }
+
+        // Stop all motion;
+        leftFrontDrive.setPower(0);
+        leftRearDrive.setPower(0);
+        rightFrontDrive.setPower(0);
+        rightRearDrive.setPower(0);
+
+        // Turn off RUN_TO_POSITION
+        leftFrontDrive.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        leftRearDrive.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        rightFrontDrive.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        rightRearDrive.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+
+        //  sleep(250);   // optional pause after each move
     }
 
     public void drive(double y, double x, double rotation, double timeInSecs) {

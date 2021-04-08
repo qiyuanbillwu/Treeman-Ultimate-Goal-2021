@@ -65,24 +65,27 @@ public class Camera_Test_Blue extends LinearOpMode {
         waitForStart();
         runtime.reset();
 
-        robot.drive.drive(0.5,0,0, 0.6);
-        safeWait(0.8);
+        robot.drive.drive(0.5,0,0, 0.9);
+        safeWait(0.9);
 
         robot.drive.drive(0,-0.5,0,0.6);
-        safeWait(0.8);
+        safeWait(0.7);
+
+        robot.drive.drive(0,0,0.2,0.25);
+        safeWait(0.25);
 
         //如果安装了摄像头，直接在此调用摄像头初始化程序
         robot.detector.start();
 
-        //调整此参数以保证全素运行
-        safeWait(5);
+        safeWait(3);
 
         robot.detector.stop();
 
-        telemetry.addData("case: ", robot.detector.stableResult);
+        telemetry.addData("label", robot.detector.currLabel);
+        telemetry.addData("case", robot.detector.stableResult);
         telemetry.update();
 
-        safeWait(5);
+        safeWait(2);
 
         robot.stop();
     }
