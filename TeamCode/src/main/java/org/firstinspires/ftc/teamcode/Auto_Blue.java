@@ -69,10 +69,12 @@ public class Auto_Blue extends LinearOpMode {
         waitForStart();
         runtime.reset();
 
-        robot.drive.encoderDrive(0.6,1.0,1.0,3);
+        robot.drive.encoderDrive(0.6,1,1,3);
 
         robot.drive.drive(0,-0.5,0,0.6);
         safeWait(0.7);
+
+        robot.drive.encoderDrive(0.5,0.1,-0.1,2);
 
 //        robot.drive.drive(0,0,0.2,0.25);
 //        safeWait(0.25);
@@ -88,8 +90,10 @@ public class Auto_Blue extends LinearOpMode {
         telemetry.addData("case", robot.detector.stableResult);
         telemetry.update();
 
-        robot.drive.encoderDrive(0.8,1.45, 1.45, 4);
+        robot.drive.encoderDrive(0.8,1.6, 1.6, 4);
         robot.stop();
+
+        robot.drive.encoderDrive(0.4,0.1,-0.1,1);
 
         robot.launch.launch(2*360);
 
@@ -110,8 +114,8 @@ public class Auto_Blue extends LinearOpMode {
             robot.drive.drive(0,0,-0.8,0.5);
             safeWait(0.5);
 
-            robot.drive.drive(0.5,0,0,0.5);
-            safeWait(0.5);
+            robot.drive.drive(0.4,0,0,1);
+            safeWait(1);
 
             releaseGoal();
 
@@ -129,8 +133,8 @@ public class Auto_Blue extends LinearOpMode {
         }
 
         if (robot.detector.stableResult == 2){
-            robot.drive.drive(1,0,0,0.7);
-            safeWait(0.7);
+            robot.drive.drive(1,0,0,0.9);
+            safeWait(0.9);
 
             robot.drive.drive(0,0,-0.6, 0.5);
             safeWait(0.5);
@@ -140,8 +144,8 @@ public class Auto_Blue extends LinearOpMode {
 
             releaseGoal();
 
-            robot.drive.drive(-0.8,0,0,0.6);
-            safeWait(0.6);
+            robot.drive.drive(-0.8,0,0,0.8);
+            safeWait(0.8);
 
             robot.intake.kick();
         }

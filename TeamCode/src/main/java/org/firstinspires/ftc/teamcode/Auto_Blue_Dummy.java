@@ -65,9 +65,12 @@ public class Auto_Blue_Dummy extends LinearOpMode {
         waitForStart();
         runtime.reset();
 
-        robot.drive.encoderDrive(0.6,3,3,6);
+        robot.drive.drive(0,-0.5,0,1);
+        safeWait(1);
 
-        robot.drive.encoderDrive(0.5,0.3,-0.3,2);
+        robot.drive.encoderDrive(0.8,3,3,5);
+
+        robot.drive.encoderDrive(0.5,0.4,-0.4,2);
 
         robot.launch.launch(2 * 360);
 
@@ -77,18 +80,18 @@ public class Auto_Blue_Dummy extends LinearOpMode {
         robot.launch.push();
 //        robot.inTake.in(5*360,5);
         //等待动作完成
-        safeWait(1);
+        safeWait(0.8);
         robot.launch.push();
-        safeWait(1);
+        safeWait(0.8);
         robot.launch.push();
-        safeWait(1);
+        safeWait(0.8);
         robot.launch.stop();
 
-        robot.drive.encoderDrive(0.5,-0.4,0.4,2);
+        robot.drive.encoderDrive(0.5,-0.5,0.5,2);
 
         releaseGoal();
 
-        robot.drive.encoderDrive(0.5,0.5,0.5,2);
+        robot.drive.encoderDrive(1,-2,-2,2);
 
         robot.intake.kick();
 
@@ -106,7 +109,7 @@ public class Auto_Blue_Dummy extends LinearOpMode {
 
         robot.arm.open();
 
-        safeWait(2);
+        safeWait(1);
     }
 
 
