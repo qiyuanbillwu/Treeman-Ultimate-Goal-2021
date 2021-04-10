@@ -33,7 +33,7 @@ public class IntakeSystem extends DeviceInterface {
     }
 
     public void kick(){
-        kicker.setPosition(0.6);
+        kicker.setPosition(0.7);
     }
 
     public void intake(double speed) {

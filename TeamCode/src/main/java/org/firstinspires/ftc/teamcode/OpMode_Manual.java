@@ -41,11 +41,11 @@ public class OpMode_Manual extends LinearOpMode {
             double speed = 0.0;
 
             if (gamepad2.left_bumper || gamepad1.left_trigger > 0){
-                speed = 1.1;
+                speed = 1.4;
             } else if (gamepad2.right_bumper){
-                speed = 1.2;
-            } else if (gamepad2.left_trigger > 0 || gamepad1.right_trigger > 0){
                 speed = 1.5;
+            } else if (gamepad2.left_trigger > 0 || gamepad1.right_trigger > 0){
+                speed = 2;
             } else if (gamepad2.right_trigger > 0){
                 speed = 2.5;
             }

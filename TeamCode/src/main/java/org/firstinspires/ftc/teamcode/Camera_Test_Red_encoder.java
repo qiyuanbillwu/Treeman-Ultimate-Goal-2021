@@ -65,13 +65,15 @@ public class Camera_Test_Red_encoder extends LinearOpMode {
         waitForStart();
         runtime.reset();
 
-        robot.drive.encoderDrive(0.6,0.7,0.7,3);
+        robot.drive.encoderDrive(0.6,1.1,1.1,3);
 
-        robot.drive.drive(0,0.5,0,0.6);
-        safeWait(0.6);
+        robot.drive.drive(0,0.5,0,0.7);
+        safeWait(0.7);
 
-        robot.drive.drive(0,0,-0.2,0.15);
-        safeWait(0.15);
+//        robot.drive.drive(0,0,-0.2,0.2);
+//        safeWait(0.2);
+
+        robot.drive.encoderDrive(0.5,-0.2,0.2,2);
 
         //如果安装了摄像头，直接在此调用摄像头初始化程序
         robot.detector.start();

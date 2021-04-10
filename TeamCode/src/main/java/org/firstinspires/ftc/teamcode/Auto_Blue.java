@@ -69,7 +69,7 @@ public class Auto_Blue extends LinearOpMode {
         waitForStart();
         runtime.reset();
 
-        robot.drive.encoderDrive(0.6,1.2,1.2,3);
+        robot.drive.encoderDrive(0.6,1.0,1.0,3);
 
         robot.drive.drive(0,-0.5,0,0.6);
         safeWait(0.7);
