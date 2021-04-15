@@ -60,7 +60,7 @@ public class Auto_Blue_Dummy extends LinearOpMode {
         telemetry.update();
 
         robot = new Robot();
-        robot.init(hardwareMap);
+        robot.init(hardwareMap, telemetry);
 
         waitForStart();
         runtime.reset();

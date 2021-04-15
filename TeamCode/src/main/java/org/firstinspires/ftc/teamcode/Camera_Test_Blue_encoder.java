@@ -60,7 +60,7 @@ public class Camera_Test_Blue_encoder extends LinearOpMode {
         telemetry.update();
 
         robot = new Robot();
-        robot.init(hardwareMap);
+        robot.init(hardwareMap, telemetry);
 
         waitForStart();
         runtime.reset();

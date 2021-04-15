@@ -1,9 +1,8 @@
 package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.hardware.HardwareMap;
-import com.qualcomm.robotcore.util.ElapsedTime;
 
-import org.firstinspires.ftc.robotcontroller.external.samples.HardwarePushbot;
+import org.firstinspires.ftc.robotcore.external.Telemetry;
 import org.firstinspires.ftc.teamcode.subsystems.*;
 import java.util.*;
 
@@ -15,6 +14,7 @@ public class Robot {
     public IntakeSystem intake;
     public Arm arm;
     public TensorFlowObjectDetection detector;
+    public IMU imu;
 
     ArrayList<DeviceInterface> devices = new ArrayList<>();
 
@@ -26,10 +26,11 @@ public class Robot {
         intake = new IntakeSystem();
         arm = new Arm();
         detector = new TensorFlowObjectDetection();
+        imu = new IMU();
 
     }
 
-    public void init(HardwareMap hardwareMap) {
+    public void init(HardwareMap hardwareMap, Telemetry telemetry) {
 
         drive.init(hardwareMap);
         launch.init(hardwareMap);
@@ -37,6 +38,7 @@ public class Robot {
         intake.init(hardwareMap);
         arm.init(hardwareMap);
         detector.init(hardwareMap);
+        imu.init(hardwareMap, telemetry);
 
     }
 
@@ -46,7 +48,7 @@ public class Robot {
         intake.stop();
         arm.stop();
         detector.stop();
-
+        imu.stop();
     }
 
 }

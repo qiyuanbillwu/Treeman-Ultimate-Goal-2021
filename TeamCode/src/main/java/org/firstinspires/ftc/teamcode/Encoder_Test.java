@@ -61,7 +61,7 @@ public class Encoder_Test extends LinearOpMode {
         telemetry.update();
 
         robot = new Robot();
-        robot.init(hardwareMap);
+        robot.init(hardwareMap, telemetry);
         robot.drive.initEncoder();
 
         waitForStart();
