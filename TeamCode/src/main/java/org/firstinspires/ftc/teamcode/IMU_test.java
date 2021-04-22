@@ -33,6 +33,14 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.util.ElapsedTime;
 
+import org.firstinspires.ftc.robotcore.external.Func;
+import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
+import org.firstinspires.ftc.robotcore.external.navigation.AxesOrder;
+import org.firstinspires.ftc.robotcore.external.navigation.AxesReference;
+import org.firstinspires.ftc.robotcore.external.navigation.Orientation;
+
+import java.util.Locale;
+
 
 /**
  * This file contains an minimal example of a Linear "OpMode". An OpMode is a 'program' that runs in either
@@ -56,50 +64,74 @@ public class IMU_test extends LinearOpMode {
 
     @Override
     public void runOpMode() {
-        telemetry.addData("Status", "Initialized");
-        telemetry.update();
-
         robot = new Robot();
         robot.init(hardwareMap, telemetry);
+        robot.imu.start();
+
+        robot.imu.angles = robot.imu.imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES);
+        double heading = robot.imu.angles.firstAngle;
+
+        telemetry.addData("heading:", heading);
+
+        telemetry.addData("Status", "Initialized");
+        telemetry.update();
 
         waitForStart();
         runtime.reset();
 
-        robot.imu.start();
+        int a = 0;
 
         robot.drive.drive(0,0,0.5);
-        safeWait(5);
-        robot.drive.stop();
 
-        safeWait(10);
-
-        robot.imu.stop();
+        double initTime = runtime.seconds();
+        while (opModeIsActive() && (runtime.seconds() < initTime + 3) /*&& (heading + robot.imu.angles.firstAngle > -90)*/ ) {
+            robot.imu.angles = robot.imu.imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES);
+            telemetry.addData("heading1: ", heading);
+            telemetry.addLine()
+                    .addData("heading", new Func<String>() {
+                        @Override public String value() {
+                            return formatAngle(robot.imu.angles.angleUnit, robot.imu.angles.firstAngle);
+                        }
+                    })
+                    .addData("roll", new Func<String>() {
+                        @Override public String value() {
+                            return formatAngle(robot.imu.angles.angleUnit, robot.imu.angles.secondAngle);
+                        }
+                    })
+                    .addData("pitch", new Func<String>() {
+                        @Override public String value() {
+                            return formatAngle(robot.imu.angles.angleUnit, robot.imu.angles.thirdAngle);
+                        }
+                    });
+            telemetry.update();
+            a++;
+        }
 
         robot.stop();
-    }
 
-    public void releaseGoal(){
-        robot.arm.rotate(0.8);
-        safeWait(1.0);
-        robot.arm.stop();
-
-        safeWait(1);
-
-        robot.arm.open();
+        telemetry.addData("a:", a);
+        telemetry.update();
 
         safeWait(2);
     }
 
-
     public void safeWait(double seconds){
         double initTime = runtime.seconds();
-        while (opModeIsActive() && (runtime.seconds() < initTime+ seconds)) {
+        while (opModeIsActive() && (runtime.seconds() < initTime + seconds)) {
             try {
                 Thread.sleep(5);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
+    }
+
+    String formatAngle(AngleUnit angleUnit, double angle) {
+        return formatDegrees(AngleUnit.DEGREES.fromUnit(angleUnit, angle));
+    }
+
+    String formatDegrees(double degrees){
+        return String.format(Locale.getDefault(), "%.1f", AngleUnit.DEGREES.normalize(degrees));
     }
 
 }

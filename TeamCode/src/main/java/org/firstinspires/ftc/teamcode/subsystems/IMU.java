@@ -18,10 +18,10 @@ import java.util.Locale;
 
 public class IMU extends DeviceInterface {
     // The IMU sensor object
-    BNO055IMU imu;
+    public BNO055IMU imu;
 
     // State used for updating telemetry
-    Orientation angles;
+    public Orientation angles;
     Acceleration gravity;
 
     HardwareMap hardwareMap = null;
@@ -52,12 +52,11 @@ public class IMU extends DeviceInterface {
         imu = hardwareMap.get(BNO055IMU.class, "imu");
         imu.initialize(parameters);
 
-        composeTelemetry();
+        //composeTelemetry();
     }
 
     public void start(){
         imu.startAccelerationIntegration(new Position(), new Velocity(), 1000);
-        telemetry.update();
     }
 
     public void stop(){
