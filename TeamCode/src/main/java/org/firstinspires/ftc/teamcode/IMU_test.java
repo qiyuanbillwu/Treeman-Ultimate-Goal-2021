@@ -41,6 +41,8 @@ import org.firstinspires.ftc.robotcore.external.navigation.Orientation;
 
 import java.util.Locale;
 
+import static java.lang.Math.abs;
+
 
 /**
  * This file contains an minimal example of a Linear "OpMode". An OpMode is a 'program' that runs in either
@@ -68,9 +70,7 @@ public class IMU_test extends LinearOpMode {
         robot.init(hardwareMap, telemetry);
         robot.imu.start();
 
-        robot.imu.angles = robot.imu.imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES);
-        double heading = robot.imu.angles.firstAngle;
-
+        double heading = robot.imu.getAngle();
         telemetry.addData("heading:", heading);
 
         telemetry.addData("Status", "Initialized");
@@ -79,40 +79,25 @@ public class IMU_test extends LinearOpMode {
         waitForStart();
         runtime.reset();
 
-        int a = 0;
-
-        robot.drive.drive(0,0,0.5);
-
-        double initTime = runtime.seconds();
-        while (opModeIsActive() && (runtime.seconds() < initTime + 3) /*&& (heading + robot.imu.angles.firstAngle > -90)*/ ) {
-            robot.imu.angles = robot.imu.imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES);
-            telemetry.addData("heading1: ", heading);
-            telemetry.addLine()
-                    .addData("heading", new Func<String>() {
-                        @Override public String value() {
-                            return formatAngle(robot.imu.angles.angleUnit, robot.imu.angles.firstAngle);
-                        }
-                    })
-                    .addData("roll", new Func<String>() {
-                        @Override public String value() {
-                            return formatAngle(robot.imu.angles.angleUnit, robot.imu.angles.secondAngle);
-                        }
-                    })
-                    .addData("pitch", new Func<String>() {
-                        @Override public String value() {
-                            return formatAngle(robot.imu.angles.angleUnit, robot.imu.angles.thirdAngle);
-                        }
-                    });
-            telemetry.update();
-            a++;
-        }
+        turnToPosition(-90, 10);
 
         robot.stop();
 
-        telemetry.addData("a:", a);
+        robot.imu.angles.firstAngle = robot.imu.getAngle();
+
+        telemetry.addData("heading: ", robot.imu.angles.firstAngle);
         telemetry.update();
 
         safeWait(2);
+    }
+
+    public void turnToPosition(int orientation, double timeOut){
+        double initTime = runtime.seconds();
+        robot.drive.drive(0,0,0.4);
+        while (opModeIsActive() && (runtime.seconds() < initTime + timeOut) && abs(robot.imu.angles.firstAngle - orientation) > 15) {
+            robot.imu.angles.firstAngle = robot.imu.getAngle();
+        }
+        robot.drive.stop();
     }
 
     public void safeWait(double seconds){

@@ -15,6 +15,7 @@ public class Robot {
     public Arm arm;
     public TensorFlowObjectDetection detector;
     public IMU imu;
+    public Ranger ranger;
 
     ArrayList<DeviceInterface> devices = new ArrayList<>();
 
@@ -27,6 +28,7 @@ public class Robot {
         arm = new Arm();
         detector = new TensorFlowObjectDetection();
         imu = new IMU();
+        ranger = new Ranger();
 
     }
 
@@ -39,6 +41,7 @@ public class Robot {
         arm.init(hardwareMap);
         detector.init(hardwareMap);
         imu.init(hardwareMap, telemetry);
+        ranger.init(hardwareMap, telemetry);
 
     }
 
@@ -49,6 +52,7 @@ public class Robot {
         arm.stop();
         detector.stop();
         imu.stop();
+        ranger.stop();
     }
 
 }

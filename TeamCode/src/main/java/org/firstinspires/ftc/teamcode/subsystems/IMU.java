@@ -27,10 +27,6 @@ public class IMU extends DeviceInterface {
     HardwareMap hardwareMap = null;
     Telemetry telemetry = null;
 
-    public void IMU(){
-
-    }
-
     public void init(HardwareMap hardwareMap, Telemetry telemetry){
         this.hardwareMap = hardwareMap;
         this.telemetry = telemetry;
@@ -59,8 +55,13 @@ public class IMU extends DeviceInterface {
         imu.startAccelerationIntegration(new Position(), new Velocity(), 1000);
     }
 
+    public float getAngle(){
+        angles = imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES);
+        return angles.firstAngle;
+    }
+
     public void stop(){
-        imu.close();
+
     }
 
     void composeTelemetry() {
