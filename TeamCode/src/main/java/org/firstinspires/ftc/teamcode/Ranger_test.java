@@ -72,8 +72,19 @@ public class Ranger_test extends LinearOpMode {
         waitForStart();
         runtime.reset();
 
-        double distance = 100;
+        goDistance(100);
 
+        safeWait(2);
+
+        telemetry.addData("distance: ", robot.ranger.sensorRange.getDistance(DistanceUnit.CM));
+        telemetry.update();
+
+        safeWait(2);
+
+        robot.stop();
+    }
+
+    public void goDistance(double distance){
         robot.drive.drive(0.5,0,0);
 
         while (opModeIsActive() && distance - robot.ranger.sensorRange.getDistance(DistanceUnit.CM) > 10){
@@ -81,11 +92,6 @@ public class Ranger_test extends LinearOpMode {
         }
 
         robot.drive.stop();
-
-        telemetry.addData("distance: ", robot.ranger.sensorRange.getDistance(DistanceUnit.CM));
-        telemetry.update();
-
-        robot.stop();
     }
 
     public void safeWait(double seconds){
